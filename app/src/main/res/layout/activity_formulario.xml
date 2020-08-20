@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="235sp">
+
+            <ImageView
+                android:id="@+id/contactPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:src="@drawable/ic_no_image"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16sp"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:autofillHints="yes"
+            android:hint="Nome"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:inputType="number"
+            android:hint="Telefone"/>
+
+        <RatingBar
+            android:id="@+id/nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:foregroundTint="@android:color/holo_red_dark"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>
